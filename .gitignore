@@ -1,0 +1,13 @@
+# Windows / OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Jekyll build output (for the upcoming JekyllSetup branch)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Editor folders
+.vscode/
