@@ -19,7 +19,7 @@
             <!-- NavBar -->
             <nav class="navbar fixed-top bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
                     <div class="container-fluid">
-                        <img src="./img/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <img src="./img/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
                     <a class="navbar-brand" href="#">Brandon Morter</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -48,13 +48,13 @@
             <div id="About">
                 <div class="row">
                     <div class="col">
-                        <img id="img1" class="initial img1" src="./img/tile1.jpg" alt=". . .">
+                        <img id="img1" class="initial img1" src="./img/tile1.jpg" alt="Hotel ballroom set for a banquet, with twin projection screens and a blue-lit diamond stage backdrop">
                     </div>
                     <div class="col">
-                        <img id="img2" class="initial img2" src="./img/tile2.jpg" alt=". . .">
+                        <img id="img2" class="initial img2" src="./img/tile2.jpg" alt="Nighttime outdoor ice show with a skater in a spotlight, projected rink graphics, and string-lit trees in the snow">
                     </div>
                     <div class="col">
-                        <img id="img3" class="initial img3" src="./img/tile3.jpg" alt=". . .">
+                        <img id="img3" class="initial img3" src="./img/tile3.jpg" alt="Ballroom set for a Winter Wonderland awards party, with welcome graphics on two screens and purple and amber uplighting">
                     </div>
                 </div>
                 <div class="row">
@@ -94,19 +94,19 @@
             <!-- /Links -->
 
             <!-- Contact -->
-            <div id="contact" class="delay initial">
+            <div id="Contact" class="delay initial">
                 <form action="https://formspree.io/f/mknldjry" method="post">
                     <div>
-                        <label class="form-label">Name:</label>
-                        <input class="form-control" type="text" name="name">
+                        <label class="form-label" for="name">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" autocomplete="name">
                     </div>
                     <div>
-                        <label class="form-label">E-Mail:</label>
-                        <input class="form-control" type="text" name="email">
+                        <label class="form-label" for="email">E-Mail:</label>
+                        <input class="form-control" type="email" id="email" name="email" autocomplete="email">
                     </div>
                     <div>
-                        <label class="form-label">Message:</label>
-                        <textarea class="form-control" name="message"></textarea>
+                        <label class="form-label" for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message"></textarea>
                     </div>
                     <div class="center" style="padding-top: 15px;">
                         <button type="submit" class="btn btn-primary">Send</button>
