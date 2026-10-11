@@ -1,0 +1,12 @@
+# Site identity
+title: Brandon Morter
+description: AV and live event production.
+
+# Where the site lives
+url: "https://zeno-96.github.io"
+baseurl: ""
+
+# Approved GitHub Pages plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
