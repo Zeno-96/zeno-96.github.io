@@ -1,129 +1,82 @@
-<!doctype html>
-<html lang="en">
+---
+layout: default
+---
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brandon Morter</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-        <link rel="manifest" href="./img/site.webmanifest">
-        <link rel="stylesheet" href="./css/Shared_Styles.css">
-    </head>
+<!-- Welcome -->
+    <div id="Home">
+        <h1 class="text">Welcome To My Portfolio Page</h1>
+        <br>
+        <p class="text">On this page you will find some background information about me, as well as links to my GitHub profile. <br> <br>Thanks for stopping by!</p>
+    </div>
+<!-- /Welcome -->
 
-    <body>
-        <div class="content">
-            
-            <!-- NavBar -->
-            <nav class="navbar fixed-top bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
-                    <div class="container-fluid">
-                        <img src="./img/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    <a class="navbar-brand" href="#">Brandon Morter</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                        <a class="nav-link" href="#About">About</a>
-                        <a class="nav-link" href="#GitHub">GitHub</a>
-                        <a class="nav-link" href="#Contact">Contact</a>
-                        </div>
-                    </div>
-                    </div>
-                </nav>
-            <!-- /NavBar -->
-
-            <!-- Welcome -->
-                <div id="Home">
-                    <h1 class="text">Welcome To My Portfolio Page</h1>
-                    <br>
-                    <p class="text">On this page you will find some background information about me, as well as links to my GitHub profile. <br> <br>Thanks for stopping by!</p>
-                </div>
-            <!-- /Welcome -->
-
-            <!-- Information -->
-            <div id="About">
-                <div class="row">
-                    <div class="col">
-                        <img id="img1" class="initial img1" src="./img/tile1.jpg" alt="Hotel ballroom set for a banquet, with twin projection screens and a blue-lit diamond stage backdrop">
-                    </div>
-                    <div class="col">
-                        <img id="img2" class="initial img2" src="./img/tile2.jpg" alt="Nighttime outdoor ice show with a skater in a spotlight, moving-head gobo patterns on the rink, and string-lit trees in the snow">
-                    </div>
-                    <div class="col">
-                        <img id="img3" class="initial img3" src="./img/tile3.jpg" alt="Ballroom set for a Winter Wonderland awards party, with welcome graphics on two screens and blue and white uplighting">
-                    </div>
-                </div>
-                <div class="row">
-                    <h1 class="text delay initial">About Me</h1>
-                    <br>
-                    <p class="text delay initial">Hello there! I'm Brandon Morter, a graduate of The Tech Academy's C# and .NET bootcamp. My current interest is front-end development, but I am a full-stack developer with experience in MudBlazor, C# and .Net, React, HTML, CSS, and Javascript. With over a decade of experience in the audio visual industry, currently a Production Manager at Tallen Inc., I bring a unique blend of technical skills and creative vision to my projects. I thrive on crafting immersive digital experiences that captivate and engage users.</p>
-                </div>
-            </div>
-            <!-- /Information -->
-
-            <!-- Links -->
-            <div id="GitHub" class="delay initial">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text">GitHub</h1>
-                        <p class="text">Click the icon below to check out my GitHub Profile.</p>
-                        <div class="center">
-                            <a href="https://github.com/Zeno-96"><img src="./img/github.png" width="300px" alt="GitHub Profile Link"></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h1 class="text">Resume</h1>
-                        <p class="text">You can find my resume here.</p>
-                        <div class="center">
-                            <a href="https://docs.google.com/document/d/1VqeXPL4PgfaI_2h6N7d4-NPZAD8YHiSxlAMvQtltC_E/edit?usp=sharing"><img src="./img/resume.png" width="300px" alt="Resume Link"></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h1 class="text">LinkedIn</h1>
-                        <p class="text">You can visit my LinkedIn Profile here.</p>
-                        <div class="center">
-                            <a href="https://www.linkedin.com/in/brandon-morter/"><img src="./img/linkedin.png" width="300px" alt="LinkedIn Link"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Links -->
-
-            <!-- Contact -->
-            <div id="Contact" class="delay initial">
-                <form action="https://formspree.io/f/mknldjry" method="post">
-                    <div>
-                        <label class="form-label" for="name">Name:</label>
-                        <input class="form-control" type="text" id="name" name="name" autocomplete="name">
-                    </div>
-                    <div>
-                        <label class="form-label" for="email">E-Mail:</label>
-                        <input class="form-control" type="email" id="email" name="email" autocomplete="email">
-                    </div>
-                    <div>
-                        <label class="form-label" for="message">Message:</label>
-                        <textarea class="form-control" id="message" name="message"></textarea>
-                    </div>
-                    <div class="center" style="padding-top: 15px;">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </div>
-                </form>
-            </div>
-            <!-- /Contact -->
-
-            <!-- Footer -->
-                <footer>
-                    <p class="text">Page Designed by Brandon Morter with Bootstrap. GitHub, Resume, and LinkedIn icons courtesy of IconScout.</p>
-                </footer>
-            <!-- /Footer  -->
+<!-- Information -->
+<div id="About">
+    <div class="row">
+        <div class="col">
+            <img id="img1" class="initial img1" src="./img/tile1.jpg" alt="Hotel ballroom set for a banquet, with twin projection screens and a blue-lit diamond stage backdrop">
         </div>
+        <div class="col">
+            <img id="img2" class="initial img2" src="./img/tile2.jpg" alt="Nighttime outdoor ice show with a skater in a spotlight, moving-head gobo patterns on the rink, and string-lit trees in the snow">
+        </div>
+        <div class="col">
+            <img id="img3" class="initial img3" src="./img/tile3.jpg" alt="Ballroom set for a Winter Wonderland awards party, with welcome graphics on two screens and blue and white uplighting">
+        </div>
+    </div>
+    <div class="row">
+        <h1 class="text delay initial">About Me</h1>
+        <br>
+        <p class="text delay initial">Hello there! I'm Brandon Morter, a graduate of The Tech Academy's C# and .NET bootcamp. My current interest is front-end development, but I am a full-stack developer with experience in MudBlazor, C# and .Net, React, HTML, CSS, and Javascript. With over a decade of experience in the audio visual industry, currently a Production Manager at Tallen Inc., I bring a unique blend of technical skills and creative vision to my projects. I thrive on crafting immersive digital experiences that captivate and engage users.</p>
+    </div>
+</div>
+<!-- /Information -->
 
+<!-- Links -->
+<div id="GitHub" class="delay initial">
+    <div class="row">
+        <div class="col">
+            <h1 class="text">GitHub</h1>
+            <p class="text">Click the icon below to check out my GitHub Profile.</p>
+            <div class="center">
+                <a href="https://github.com/Zeno-96"><img src="./img/github.png" width="300px" alt="GitHub Profile Link"></a>
+            </div>
+        </div>
+        <div class="col">
+            <h1 class="text">Resume</h1>
+            <p class="text">You can find my resume here.</p>
+            <div class="center">
+                <a href="https://docs.google.com/document/d/1VqeXPL4PgfaI_2h6N7d4-NPZAD8YHiSxlAMvQtltC_E/edit?usp=sharing"><img src="./img/resume.png" width="300px" alt="Resume Link"></a>
+            </div>
+        </div>
+        <div class="col">
+            <h1 class="text">LinkedIn</h1>
+            <p class="text">You can visit my LinkedIn Profile here.</p>
+            <div class="center">
+                <a href="https://www.linkedin.com/in/brandon-morter/"><img src="./img/linkedin.png" width="300px" alt="LinkedIn Link"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Links -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
-
-</html>
+<!-- Contact -->
+<div id="Contact" class="delay initial">
+    <form action="https://formspree.io/f/mknldjry" method="post">
+        <div>
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" autocomplete="name">
+        </div>
+        <div>
+            <label class="form-label" for="email">E-Mail:</label>
+            <input class="form-control" type="email" id="email" name="email" autocomplete="email">
+        </div>
+        <div>
+            <label class="form-label" for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <div class="center" style="padding-top: 15px;">
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+</div>
+<!-- /Contact -->
