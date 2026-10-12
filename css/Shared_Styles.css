@@ -1,9 +1,21 @@
+:root {
+    --bg: #08111f;
+    --surface: #0f1d33;
+    --border: #1c3050;
+    --text: #e3ecf7;
+    --text-muted: #8597b3;
+    --accent: #38bdf8;
+    --accent-ink: #062033;
+    --secondary: #6366f1;
+}
+
 html {
     font-size: calc(15px + 0.390625vw);
 }
 
 body {
     padding-top: 57px;
+    background-color: var(--bg);
     background-image: url("../img/header_img.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -17,13 +29,13 @@ body {
 }
 
 .content {
-    background-color: rgba(0, 0, 0, 65%);
+    background-color: rgb(8 17 31 / 80%);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .text {
-    color: whitesmoke;
+    color: var(--text);
 }
 
 h1, h2, h3, .navbar-brand {
@@ -32,6 +44,7 @@ h1, h2, h3, .navbar-brand {
 }
 
 h1 {
+    color: var(--text);
     padding: 25px;
     text-align: center;
 }
@@ -118,7 +131,7 @@ form {
 
 .form-label {
     padding-top: 15px;
-    color: whitesmoke;
+    color: var(--text);
 }
 
 footer {
@@ -132,4 +145,21 @@ footer {
     100% {
         opacity: 1;
     }
+}
+.site-nav {
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.site-nav .navbar-brand {
+    color: var(--text);
+}
+
+.site-nav .nav-link {
+    color: var(--text-muted);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+    color: var(--accent);
 }
