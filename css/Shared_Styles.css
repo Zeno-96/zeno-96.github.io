@@ -16,10 +16,8 @@ html {
 body {
     padding-top: 57px;
     background-color: var(--bg);
-    background-image: url("../img/header_img.jpg");
+    background-image: url("../img/hex-bg.svg");
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Barlow', sans-serif;
     overflow-x: hidden;
 }
@@ -29,7 +27,7 @@ body {
 }
 
 .content {
-    background-color: rgb(8 17 31 / 80%);
+    background-color: rgb(8 17 31 / 55%);
     padding-top: 50px;
     padding-bottom: 50px;
 }
