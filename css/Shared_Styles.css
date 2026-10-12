@@ -54,7 +54,26 @@ p {
     text-align: center;
 }
 
-.row {
+.photo-grid,
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 2%;
+}
+
+.photo-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-text {
     margin: 2%;
 }
 
@@ -69,7 +88,6 @@ p {
 }
 
 #img1 {
-    width: inherit;
     position: relative;
     
     animation: fadeInAnimation ease 1s;
@@ -78,7 +96,6 @@ p {
 }
 
 #img2 {
-    width: inherit;
     position: relative;
 
     animation: fadeInAnimation ease 1s;
@@ -87,7 +104,6 @@ p {
 }
 
 #img3 {
-    width: inherit;
     position: relative;
 
     animation: fadeInAnimation ease 1s;
