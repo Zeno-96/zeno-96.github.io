@@ -7,14 +7,16 @@
     --accent: #38bdf8;
     --accent-ink: #062033;
     --secondary: #6366f1;
+    --nav-height: 60px;
 }
 
 html {
     font-size: calc(15px + 0.390625vw);
+    scroll-padding-top: var(--nav-height);
 }
 
 body {
-    padding-top: 57px;
+    padding-top: var(--nav-height);
     background-color: var(--bg);
     background-image: url("../img/hex-bg.svg");
     background-attachment: fixed;
@@ -36,7 +38,7 @@ body {
     color: var(--text);
 }
 
-h1, h2, h3, .navbar-brand {
+h1, h2, h3, .brand {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
 }
@@ -144,20 +146,90 @@ footer {
         opacity: 1;
     }
 }
+/* Navbar */
 .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
     background-color: var(--surface);
     border-bottom: 1px solid var(--border);
 }
 
-.site-nav .navbar-brand {
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
     color: var(--text);
+    text-decoration: none;
 }
 
-.site-nav .nav-link {
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     color: var(--text-muted);
+    text-decoration: none;
 }
 
-.site-nav .nav-link:hover,
-.site-nav .nav-link.active {
+.nav-links a:hover {
     color: var(--accent);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Small screens: links collapse behind the toggle button */
+@media (max-width: 700px) {
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        background: none;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        width: 22px;
+        height: 2px;
+        background-color: var(--text);
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--surface);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 14px 20px;
+        border-top: 1px solid var(--border);
+    }
 }
