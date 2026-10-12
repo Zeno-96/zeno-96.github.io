@@ -1,17 +1,17 @@
-<nav class="navbar fixed-top site-nav" data-bs-theme="dark">
-    <div class="container-fluid">
-        <img src="{{ '/img/favicon.ico' | relative_url }}" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        <a class="navbar-brand" href="{{ '/' | relative_url }}">Brandon Morter</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="{{ '/#Home' | relative_url }}">Home</a>
-                <a class="nav-link" href="{{ '/#About' | relative_url }}">About</a>
-                <a class="nav-link" href="{{ '/#GitHub' | relative_url }}">GitHub</a>
-                <a class="nav-link" href="{{ '/#Contact' | relative_url }}">Contact</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<header class="site-nav">
+    <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/img/favicon-32x32.png' | relative_url }}" alt="" width="28" height="28">
+        Brandon Morter
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="site-menu" class="nav-links">
+        <a href="{{ '/#Home' | relative_url }}">Home</a>
+        <a href="{{ '/#About' | relative_url }}">About</a>
+        <a href="{{ '/#GitHub' | relative_url }}">GitHub</a>
+        <a href="{{ '/#Contact' | relative_url }}">Contact</a>
+    </nav>
+</header>
