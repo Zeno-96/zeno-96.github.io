@@ -67,17 +67,12 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
-    margin: 2%;
+    margin: 2% max(16px, 2%);
 }
 
 .photo-grid img {
     display: block;
     width: 100%;
-    height: auto;
-}
-
-.card-grid img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -356,4 +351,35 @@ footer {
     border: 1px solid var(--accent);
     border-radius: 4px;
     padding: 2px 8px;
+}
+
+/* Link tiles: the whole panel is the link */
+.tile-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.link-tile {
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.link-tile .arrow {
+    color: var(--accent);
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.link-tile:hover,
+.link-tile:focus-visible {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.link-tile:hover .arrow,
+.link-tile:focus-visible .arrow {
+    transform: translateX(4px);
 }
